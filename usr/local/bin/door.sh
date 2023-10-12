@@ -1,0 +1,14 @@
+#!/bin/bash
+
+
+# Script to open door
+
+logger -p local0.notice FouDoor activated: $USER opened the door
+
+TIMEOUT=10
+
+# SET gpio to output
+echo out > /sys/class/gpio/gpio50/direction 
+echo 1 > /sys/class/gpio/gpio50/value 
+sleep $TIMEOUT
+echo 0 > /sys/class/gpio/gpio50/value 

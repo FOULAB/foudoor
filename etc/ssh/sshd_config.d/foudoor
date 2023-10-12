@@ -1,0 +1,6 @@
+Match Group foudoor
+	PasswordAuthentication no
+	X11Forwarding no
+	AllowTcpForwarding no
+	PermitTTY no
+	ForceCommand /usr/local/bin/door.sh
