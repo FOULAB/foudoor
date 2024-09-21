@@ -3,7 +3,7 @@
 
 # Script to open door
 
-logger -p local0.notice FouDoor activated: $USER opened the door
+logger -t door.sh -p local0.notice FouDoor activated: $USER opened the door
 
 TIMEOUT=10
 
